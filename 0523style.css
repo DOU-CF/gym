@@ -38,7 +38,7 @@ h1{
 }
 
 .nav-links a:hover {
-  background-color: #F4A259;
+  background-color: #5B6146;
   color: white;
   border-radius: 5px;
 }
@@ -60,7 +60,7 @@ h1{
 }
 
 .hamburger:hover span {
-  background: #CB9962;
+  background: #00A300;
   transform: scaleX(1.2);
 }
 
@@ -412,9 +412,10 @@ li {
   font-size: 1rem;
 }
 .faq-answer {
+  display: none;
+  transition: all 0.3s ease;
   padding: 15px;
   background-color: #fff;
-  /*--display: none;--*/
   color: #333;
 }
 
@@ -450,7 +451,6 @@ footer{
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {
-
   .container-introduce {
     flex-wrap: wrap;
     gap: 20px;
@@ -458,7 +458,6 @@ footer{
     max-width: calc(50% - 12px);
     margin: auto;
   }
-
 }
 
 @media (max-width: 767px) {
