@@ -32,8 +32,7 @@ h1{
     text-decoration:none;
     display: inline-block;
     padding: 10px 20px;
-    
-    font-size: 20px;
+    font-size: 18px;
 }
 
 .menu a:hover {
@@ -42,13 +41,14 @@ h1{
 
 h2 {  
     color: #2C3E50;  
-    font-size: 30px;
+    font-size: 24px;
     margin-bottom: 20px;
     text-align: center;
 }
 
 h3 {
     color: #6B705C;
+    font-size: 24px;
 }
 
 .container {
@@ -134,6 +134,9 @@ p {
 }
 
 .course-card {
+  flex: 1 1 calc(25% - 20px); 
+  max-width: calc(25% - 20px);
+  min-width: 220px;
   box-sizing: border-box;
   position: relative;
   background-color: #F5F5DC;
@@ -178,6 +181,8 @@ p {
   justify-content: center;
   opacity: 0;
   transition: opacity 0.3s ease;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
  
 }
 
@@ -377,6 +382,18 @@ footer{
 }
 
 
+
+@media (max-width: 1024px) {
+  .course-item {
+    flex: 0 0 calc(50% - 12px);
+  }
+}
+
+@media (max-width: 768px) {
+  .course-item {
+    flex: 0 0 100%;
+  }
+}
 @media (max-width: 768px) {
   .container {
 		width: 90%;
