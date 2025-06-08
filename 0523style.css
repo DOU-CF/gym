@@ -1,0 +1,402 @@
+
+.header {
+    display: block;
+    background-color: #F6F4F1;
+    margin-top: 20px;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+  }
+
+h1{
+    text-align: center;
+    line-height: 1;
+    font-size: 32px;
+    color: #2C3E50;
+    margin-bottom: 1em;
+   
+}
+
+.menu {
+    background-color: #FF9F00;
+    text-align: center;
+   
+    display: inline-block;
+    width: 100%;
+    opacity: .6;
+}
+
+.menu a {
+    color: #fff;
+    text-decoration:none;
+    display: inline-block;
+    padding: 10px 20px;
+    
+    font-size: 20px;
+}
+
+.menu a:hover {
+    background-color: #000;
+}
+
+h2 {  
+    color: #2C3E50;  
+    font-size: 30px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+h3 {
+    color: #6B705C;
+}
+
+.container {
+    justify-content: center;
+    padding: 20px;    
+    
+}
+
+.container-hero {
+  display: flex;
+  background-color: #F6F4F1;
+  justify-content: center;
+  padding:  0 20px;
+}
+.about {
+  background-color: #F5F5DC;
+  justify-content: center;
+  padding: 0 20px;
+  margin: 0;
+  width: 50%;
+}
+
+
+.banner-slide, .banner-text {
+  flex: 1 1 50%;
+}
+.banner-slide {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  display: flex;
+}
+
+.img-wrapper img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
+
+.banner-text {
+  width: 50%;
+  padding: 20px;
+}
+  
+.slogan {
+  color: #3D5A50;
+  font-size: 20px;
+  font-style: italic;
+  line-height: 1.2;
+  margin-bottom: 8px;
+  font-weight: 550;
+  text-align: center;
+}
+
+p {
+  font-size: 20px;
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+ 
+.faith {
+  color: #6B705C;
+  font-weight: bold;
+}
+
+.faith-list {
+  color: #6B705C;
+  font-weight: bold;
+}
+
+.container-introduce {
+  background-color: #F6F4F1;
+  padding: 20px; 
+}
+
+.course-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.course-card {
+  box-sizing: border-box;
+  position: relative;
+  background-color: #F5F5DC;
+  padding: 20px;
+  margin: 10px; 
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: transform 0.4s;
+}
+
+.course-card img {
+  width: 100%;
+  border-radius: 8px;
+  display: block;
+  height: 200px;
+ 
+}
+
+.type {
+  background-color: #6B705C;
+  color: white;
+  font-size: 24px;
+  text-align: center;
+  padding: 10px;
+}
+
+.course-dialog {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(244, 241, 222, 0.95);
+  color: #000;
+  padding: 20px 0;
+  font-size: 18px;
+  margin-bottom: 20px;
+  line-height: 1.5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+ 
+}
+
+.course-card:hover .course-dialog{
+  opacity: 1;
+}
+
+.monthly-schedule {
+    background-color: #E9F5EC;
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+.schedule-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.schedule-table th, .schedule-table td {
+    border: 3px solid #ddd;
+    padding: 10px;
+}
+
+.schedule-table thead th {
+    background-color: #2C3E50;
+    color: white;
+}
+
+.schedule-table tbody td {
+    background-color: #F6F4F1;
+    color: #2C3E50;
+}
+
+.schedule-table tbody tr:nth-child(even) td {
+    background-color: #F5F5DC;
+}
+
+.container-team {
+  background-color: #F6F4F1;
+}
+.team-members { 
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    justify-content: center;
+    padding: 20px 0;
+      
+}
+
+.coach-card {
+ 
+  position: relative;
+  overflow: hidden;
+  margin: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  align-items: center;
+  text-align: center;
+  border: 8px solid #E9F5EC;
+  box-sizing: border-box;
+  background-color: #fff;
+  max-width: 100%;
+  width: 450px;
+  height: 400px;
+
+} 
+
+.card-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  
+}
+.coaches {
+  color: #2C3E50;
+}
+
+.coach-card image {
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+  object-fit: cover;
+
+}
+
+.coaches {
+  font-size: 24px;
+  color: #2C3E50;
+  margin-bottom: 10px;
+}
+.believe {
+  font-size: 20px;
+  color: #6B705C;
+  margin-bottom: 10px;
+}
+.coach-info {
+  text-align: left;
+  position: absolute;
+  top: 0;
+  left: 100%;
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff;
+  color: #2C3E50;
+  padding: 20px;
+  box-sizing: border-box;
+  transition: left 0.3s ease;
+  overflow-y: auto;
+  
+}
+
+li {
+  line-height: 1.5;
+  
+}
+
+.card-wrapper:hover .coach-info {
+  left: 0;
+}
+.card-wrapper:hover .coach-card-image {
+  transform: translateX(-100%);
+}
+
+.shares {
+    background-color: #FFF9F4;
+}
+.student {
+    color: #6B705C;
+}
+
+.student-card-wrapper {
+    display: flex;
+    flex: 1 1 50%;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px 0;
+ 
+}
+
+.faq-section {
+  background-color: #F6F4F1;
+  padding: 20px;
+}
+
+.faq-card {
+  margin-bottom: 15px;
+  border-radius: 10px;
+  overflow: hidden;
+  border: 1px solid #6B705C;
+}
+.faq-question {
+  width: 100%;
+  text-align: left;
+  padding: 15px;
+  background-color: #F4F1DE;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  color: #6B705C;
+  font-size: 1rem;
+}
+.faq-answer {
+  padding: 15px;
+  background-color: #fff;
+  /*--display: none;--*/
+  color: #333;
+}
+
+footer{
+    background-color: #6B705C;
+    color: #FFFFFF;
+  padding: 20px;
+
+}
+
+.footer-container {
+  display: flex;
+}
+
+.footer-slogan {
+    color: #F6F4F1;
+    font-size: 18px;
+    text-align: center;
+    padding: 20px 0;
+    margin: auto;
+}
+
+.footer-copyright {
+  width:100%; 
+  max-width: 100%; 
+  text-align: center;
+}
+
+
+@media (max-width: 768px) {
+  .container {
+		width: 90%;
+		padding: 0 16px;
+	}
+	
+  .container-hero {
+    flex-direction: column;
+  }
+  .container-introduce, .team-members {
+    flex-direction: column;
+    width: 90%;
+  }
+
+   .coach-card {
+    flex: 1 1 100%; /* 一整列 */
+  }
+
+  .coach-card img {
+    height: 200px; /* 可視需求調整 */
+  }
+}
+
