@@ -16,7 +16,8 @@
 <body>
     <main>
       <header>
-        <div class="navbar-container">
+        <nav class="navbar">
+        <div class="nav-container">
           <div class="logo">
             <h1>初心力量</h1>
           </div>
@@ -25,15 +26,22 @@
             <span></span>
             <span></span>
           </div>
-          <nav class="nav-links" id="navLinks">
-            <a href="#about">我們的理念</a>
-            <a href="#introduce">課程介紹</a>
-            <a href="#schedule">當月課表</a>
-            <a href="#team">教練團隊</a>
-            <a href="#comments">學員評價</a>
-            <a href="#faq">FAQ</a>
-            <a href="#contact">聯絡我們</a>
-          </nav>
+          <ul class="nav-links" id="navLinks">
+            <li><a href="#about">我們的理念</a></li>
+            <li><a href="#introduce">課程介紹</a></li>
+            <li><a href="#schedule">當月課表</a></li>
+            <li><a href="#team">教練團隊</a></li>
+            <li><a href="#comments">學員評價</a></li>
+            <li><a href="#faq">FAQ</a></li>
+            <li><a href="#contact">聯絡我們</a></li>
+          </ul>
+
+
+
+
+
+
+
         </div>
       </header>
       <div class="wrap">
@@ -89,12 +97,12 @@
                     <div class="type">TRX 懸吊訓練</div>
                 
    
-            <div class="course-dialog">TRX是一場與地心引力的小冒險，鍛鍊核心、雕塑線條，同時提升心肺耐力與肌力穩定。無論新手或高手，都能找到屬於自己的節奏。</div>
+            <div class="course-dialog">TRX鍛鍊核心、雕塑線條，同時提升心肺耐力與肌力穩定。人人都能找到屬於自己的節奏。</div>
                 </div>
                 <div class="course-card">
                   <img src="https://t3.ftcdn.net/jpg/03/05/59/32/240_F_305593240_tsLw1F5Nk22hVpuVUNjOPdQrE4WF6zyq.jpg" alt="yoga">
                     <div class="type">YOGA瑜珈</div>
-            <div class="course-dialog">瑜珈溫和地提升柔軟度，強化深層肌群，喚醒身體的自癒力。流動式練習也能活絡心肺，讓力量與平靜，在每一個深呼吸中慢慢長大。</div>
+            <div class="course-dialog">瑜珈溫和地提升柔軟度，強化深層肌群，喚醒身體的自癒力。</div>
                 </div>
                 <div class="course-card">
                   <img src="https://images.pexels.com/photos/868483/pexels-photo-868483.jpeg?auto=compress&cs=tinysrgb&w=600" alt="皮拉提斯">
@@ -104,12 +112,12 @@
                 <div class="course-card">
                   <img src="https://images.pexels.com/photos/3076514/pexels-photo-3076514.jpeg?auto=compress&cs=tinysrgb&w=600" alt="重訓">
                   <div class="type">重量訓練</div>
-                    <div class="course-dialog">重量訓練扎實地強化全身肌力，提升新陳代謝，鍛造堅韌的體能基礎。搭配循環訓練，還能刺激心肺，讓你更耐力持久。</div>
+                    <div class="course-dialog">重量訓練扎實地強化全身肌力，提升新陳代謝礎。搭配循環訓練，還能刺激心肺，更耐力持久。</div>
                 </div>
                 <div class="course-card">
                   <img src="https://images.pexels.com/photos/3076510/pexels-photo-3076510.jpeg?auto=compress&cs=tinysrgb&w=600" alt="one-on-one">
                     <div class="type">1對1教練課程</div>
-            <div class="course-dialog">量身打造心肺訓練與肌力養成計劃。從一個個小小的挑戰開始，一步步靠近你想成為的模樣。我們陪你，不只走得更遠，也走得更踏實。</div>
+            <div class="course-dialog">量身打造心肺訓練與肌力養成計劃。從一個個小小的挑戰開始，一步步靠近你想成為的模樣。</div>
             </div>
         
                 </div>
@@ -294,7 +302,8 @@
 
 <div class="container">
   <div class="faq-section">
-    <h2 class="faq-section">FAQ</h2>
+    <h2 id="faq" class="faq-section">FAQ</h2>
+   
     <div class="faq-card">
     <button class="faq-question">Q1：完全沒經驗可以參加嗎？</button>
     <div class="faq-answer">A：當然可以！我們設有新手友善課程，從零開始一步步引導您建立身體意識與穩定訓練習慣。
@@ -344,7 +353,7 @@
 
   // 開關選單
   hamburger.addEventListener('click', (e) => {
-    e.stopPropagation(); //
+    e.stopPropagation();
     hamburger.classList.toggle('active');
     navLinks.classList.toggle('show');
   });
