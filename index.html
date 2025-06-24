@@ -46,19 +46,13 @@
       </header>
       <div class="wrap">
         
-          <div class="container-hero">
-          <div class="banner-slide">
-
-        
-            <div class="swiper-slide img-wrapper">
+          <section class="hero">
+          
               <img src="https://images.pexels.com/photos/8436640/pexels-photo-8436640.jpeg?auto=compress&cs=tinysrgb&w=1200&h=600" alt="YOGA" class="banner2">
             <div class="hero-overlay"></div> 
-            </div>
-          </div>
-          </div>
-                <!-- 圖片在左 輪播, 理念文字在右 --底色: #A8D5BA -->
+            
              
-          <div class="banner-text"> 
+          <div class="hero-text"> 
             <h3 class="slogan">輕輕動起來，慢慢喜歡自己。</h3>
             <h3 class="slogan">運動不必勉強，只需一點點勇氣。</h3>
             <h3 class="slogan">讓我們一起，從小習慣開始，重新遇見自己。</h3>
@@ -72,10 +66,12 @@
             個人化訓練：針對你的目標、體能與生活習慣，量身打造訓練計畫。
             <br>
             社群支持：一起運動、不孤單，讓改變成為一種習慣。</p>
+            <a href="#introduce" class="cta-btn">開始了解我們</a>
           </div>
-            </div>
+          <div class="scroll-down">&#x2193;</div>
+          </section>
         
-        </div>
+      
         <div class="container-introduce">
           
      <h2 id="introduce" class="types">課程介紹</h2>
@@ -365,7 +361,7 @@
     }
   });
 
-
+/*--
   const swiper = new Swiper('.banner-slide', {
     loop: true,
     autoplay: {
@@ -392,6 +388,7 @@ document.querySelectorAll('.faq-question').forEach(btn => {
     answer.style.display = answer.style.display === 'block' ? 'none' : 'block';
   });
 });
+--/
     </script>
     
 </body>
