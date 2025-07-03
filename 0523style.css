@@ -2,6 +2,14 @@
     font-family: 'Roboto', sans-serif;
     max-width: 1200px;
     margin: 0 auto;
+    background-color: #FFF9F4;
+  
+}
+section {
+  padding: 0 16px;
+}
+*{
+  outline: 1px solid red;
 }
 
 .header {
@@ -96,7 +104,8 @@ h2 {
 
 h3 {
     color: #6B705C;
-    font-size: 24px;
+    font-size: 20px;
+    margin-bottom: 10px;
 }
 
 .container {
@@ -112,37 +121,52 @@ h3 {
   padding: 20px;
   flex-wrap: wrap;
 }
-.about {
-  background-color: #F5F5DC;
-  justify-content: center;
-  padding: 0 20px;
-  margin: 0;
-  width: 50%;
-}
+
 
 .hero {
-position: relative;
-width: 100%;
-height: 100vh;
-overflow: hidden;
+  background-image: url(https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 100%;
+  height: 100vh;
+  /*object-fit: cover;*/
+  /*object-fit 只適用於 <img> 或 <video>。
+    background-size 則是背景圖片的控制。*/
+  object-position: center;
+  position: relative;
+   background-size: cover;
+
+ 
+animation: imgFade 2s ease-in-out forwards;
+opacity: 0;
+
+}
+.hero-opacity{
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.4);
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
-.hero-img {
+/*.hero-img {
 width: 100%;
 height: 100%;
 object-fit: cover;
 object-position: center;
-/**--display: block;--**/
+display: block;
 animation: imgFade 2s ease-in-out forwards;
 opacity: 0;
-}
+}*/
 
-.hero-overlay {
+/*.hero-overlay {
 position: absolute;
 inset: 0;
-background: rgba(107, 112, 92, 0.4); /* 可改為深棕 rgba(107,112,92,0.4) */
+background: rgba(107, 112, 92, 0.4); /* 可改為深棕 rgba(107,112,92,0.4);
 z-index: 1;
-}
+}*/
 /**
 .img-wrapper img {
   position: absolute;
@@ -155,48 +179,39 @@ z-index: 1;
 }
 --*/
 
-
 .hero-text {
 position: absolute;
-
 top: 50%;
 left: 50%;
 transform: translate(-50%, -50%);
-color: #fff;
-text-align: center;
-max-width: 500px;
+justify-content: center;
+text-align:left;
 animation: textSlide 1.5s ease-out 0.6s forwards;
 opacity: 0;
 z-index: 2;
-width: 50%;
-padding: 20px;
 }
   
-.slogan {
-  color: #3D5A50;
-  font-size: 20px;
+h2.slogan {
+  color: #fff;
+  font-size: 30px;
   font-style: italic;
-  line-height: 1.2;
+  line-height: 1.8;
   margin-bottom: 8px;
-  font-weight: 550;
   text-align: center;
+  z-index: 2;
 }
 
 p {
-  font-size: 20px;
+  font-size: 22px;
   margin-bottom: 20px;
   line-height: 1.5;
 }
  
-.faith {
-  color: #6B705C;
-  font-weight: bold;
+p.slogan {
+  color: #CB9962;
+  
 }
 
-.faith-list {
-  color: #6B705C;
-  font-weight: bold;
-}
 .cta-btn {
   display: inline-block;
   margin-top: 20px;
@@ -209,7 +224,7 @@ p {
   transition: background 0.3s;
 }
 
-  .cta-btn:hover {
+.cta-btn:hover {
 background: #b98552;
 }
 
@@ -258,31 +273,43 @@ background: #b98552;
 }
 
 
+.about {
+  background-color: #F5F5DC;
+  justify-content: center;
+  padding: 0 20px;
+  margin: 0;
+}
+ul li{
+  font-size: 18px;
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
 .container-introduce {
-  background-color: #F6F4F1;
+  /*--background-color: #F6F4F1;--*/
   padding: 20px; 
 }
 
 .course-cards {
   display: flex;
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 25px;
   justify-content: center;
   margin: 0 auto;
-  padding: 40px 16px;
+  padding: 30px 16px;
 }
 
 .course-card {
-  flex: 1 1 calc(25% - 20px); 
-  max-width: calc(25% - 20px);
+  flex: 1 1 calc(33% - 25px); 
+  max-width: calc(33% - 25px);
   min-width: 220px;
+  height: 400px;
   box-sizing: border-box;
   position: relative;
-  background-color: #F5F5DC;
+  /*--background-color: #F5F5DC;--*/
   padding: 20px;
   margin-bottom: 20px;
   text-align: center;
-
+  
   border-radius: 10px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
   transition: transform 0.4s;
@@ -290,9 +317,10 @@ background: #b98552;
 
 .course-card img {
   width: 100%;
+  height: auto;
   border-radius: 8px;
   display: block;
-  height: 200px;
+  
 }
 
 .type {
@@ -307,7 +335,7 @@ background: #b98552;
   position: absolute;
   top: 0;
   left: 0;
-  height: 100%;
+  height: auto;
   background-color: #E9F5EC;
   color: #333;
   padding: 30px;
@@ -376,6 +404,7 @@ background: #b98552;
 .coach-card {
   position: relative;
   overflow: hidden;
+  margin-bottom: 20px;
   margin: 20px;
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.1);
@@ -386,15 +415,15 @@ background: #b98552;
   background-color: #fff;
   max-width: 100%;
   width: 400px;
-  height: 400px;
+  height: 300px;
 } 
 
-.card-wrapper {
+/*.card-wrapper {
   position: relative;
   width: 100%;
   height: 100%;
-  
-}
+}*/
+
 .coaches {
   color: #2C3E50;
 }
@@ -409,15 +438,15 @@ background: #b98552;
 
 }
 
-.coaches {
-  font-size: 24px;
+.coach-info h3 {
+  font-size: 20px;
   color: #2C3E50;
-  margin-bottom: 10px;
+  margin-bottom: 8px;
 }
 .believe {
   font-size: 20px;
   color: #6B705C;
-  margin-bottom: 10px;
+  margin-bottom: 8px;
 }
 .coach-info {
   text-align: left;
@@ -434,9 +463,10 @@ background: #b98552;
   overflow-y: auto;
   
 }
+.coach-card li {
 
-li {
-  line-height: 1.5;
+  line-height: 1.3;
+  font-size: 16px;
   
 }
 
@@ -511,6 +541,7 @@ li {
 footer{
     background-color: #6B705C;
     color: #FFFFFF;
+
   padding: 20px;
 
 }
@@ -577,9 +608,10 @@ footer{
 		padding: 0 16px;
 	}
 	
-  .container-hero {
+  .hero {
     flex-direction: column;
     padding: 20px;
+    height: auto;
     
   }
   p, .faith-list, .slogan {
