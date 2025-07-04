@@ -282,7 +282,7 @@ background: #b98552;
 ul li{
   font-size: 18px;
   margin-bottom: 20px;
-  line-height: 1.5;
+  line-height: 1.3;
 }
 .container-introduce {
   /*--background-color: #F6F4F1;--*/
@@ -302,7 +302,7 @@ ul li{
   flex: 1 1 calc(33% - 25px); 
   max-width: calc(33% - 25px);
   min-width: 220px;
-  height: 400px;
+  height: 350px;
   box-sizing: border-box;
   position: relative;
   overflow: hidden;
@@ -320,6 +320,7 @@ ul li{
   height: auto;
   border-radius: 8px;
   display: block;
+  object-fit: cover;
   
 }
 
@@ -371,6 +372,7 @@ ul li{
   display: flex;
   align-items: center;
   justify-content: center;
+  box-sizing: border-box;
 }
 
 .course-card:hover .course-dialog{
@@ -388,6 +390,7 @@ ul li{
     background-color: #E9F5EC;
     margin-bottom: 20px;
     padding: 20px;
+
 }
 
 .schedule-table {
@@ -418,6 +421,8 @@ ul li{
 
 .container-team {
   background-color: #F6F4F1;
+      margin-bottom: 20px;
+    padding: 20px;
 }
 .team-members { 
     display: flex;
@@ -469,11 +474,7 @@ ul li{
   color: #2C3E50;
   margin-bottom: 8px;
 }
-.believe {
-  font-size: 20px;
-  color: #6B705C;
-  margin-bottom: 8px;
-}
+
 .coach-info {
   text-align: left;
   position: absolute;
@@ -489,13 +490,18 @@ ul li{
   overflow-y: auto;
   
 }
-.coach-card li {
 
-  line-height: 1.3;
-  font-size: 16px;
-  
+
+li .believe{
+  font-size: 36px;
+  color: #6B705C;
+  margin-bottom: 5px;
 }
 
+li .license{
+  font-size: 18px;
+  color: #6B705C;
+}
 .card-wrapper:hover .coach-info {
   left: 0;
 }
@@ -504,39 +510,63 @@ ul li{
 }
 
 .shares {
-    background-color: #FFF9F4;
+  background-color: #FFF9F4;
+  padding-bottom: 40px;
+  margin-bottom: 20px;
+  padding: 20px;
 }
 .student {
     color: #6B705C;
+    margin-bottom: 10px;
 }
 
-.student-card-wrapper {
-    display: flex;
-    flex: 1 1 50%;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
-    padding: 20px 0;
+.student-swiper {
+  width: 90%;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px 0;
+
 }
 
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /*background-color: lightblue;*/
+}
 .student-card {
   background: #FFF9F4;
   padding: 20px;
   border-radius: 10px;
   text-align: center;
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  width: 100%;
+  box-sizing: border-box;
+  min-height: 350px;
 }
 .student-card img {
-  width: auto;
-  max-height: 300px;
+  width: 150px;
+  height: 150px;
   object-fit: cover;
-  border-radius: 8px;
+  border-radius: 50%;
   margin-bottom: 15px;
+}
+
+.sharing {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #333;
 }
 
 .faq-section {
   background-color: #F6F4F1;
   padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
 }
 
 .faq-card {
@@ -555,54 +585,108 @@ ul li{
   cursor: pointer;
   color: #6B705C;
   font-size: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
+
 .faq-answer {
   display: none;
-  transition: all 0.3s ease;
   padding: 15px;
   background-color: #fff;
   color: #333;
+  line-height: 1.6;
 }
 
 footer{
     background-color: #6B705C;
     color: #FFFFFF;
-
-  padding: 20px;
+    padding: 20px;
+    margin-top: 40px;
 
 }
 
 .footer-container {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 20px 0;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.footer-info {
+  flex: 1 1 300px;
+  margin-bottom: 20px;
+  text-align: left;
+  padding: 0 15px;
+}
+
+.footer-info h3 {
+  color: #FFFFFF;
+  margin-bottom: 10px;
+}
+
+.footer-info p {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 5px;
 }
 
 .footer-slogan {
     color: #F6F4F1;
     font-size: 18px;
     text-align: center;
-    padding: 20px 0;
-    margin: auto;
+    padding: 20px 15px;
+    flex: 1 1 400px;
+}
+
+.footer-slogan p {
+  margin-bottom: 10px;
 }
 
 .footer-copyright {
   width:100%; 
   max-width: 100%; 
   text-align: center;
+  padding-top: 10px;
+  border-top: 1px solid rgba(255,255,255,0.2);
 }
 
 @media (max-width: 1024px) {
-  .course-item {
-    flex: 0 0 calc(50% - 12px);
+  .course-card {
+    flex: 1 1 calc(33.33% - 20px);
+    max-width: calc(33.33% - 20px);
+  }
+
+  .team-members .coach-card {
+    max-width: 400px;
+  }
+
+  .student-card {
+    flex: 1 1 calc(50% - 20%);
+    max-width: calc(50% - 20%);
   }
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {
-  .container-introduce {
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
-    max-width: calc(50% - 12px);
-    margin: auto;
+  .container-hero {
+    flex-direction: column;
+  }
+  .banner-slide, .banner-text {
+    width: 100%;
+    max-width: none;
+  }
+  .course-card {
+    flex: 1 1 calc(50% - 20%);
+    max-width: calc(50% - 20%);
+  }
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer-info, .footer-slogan {
+    text-align: center;
   }
 }
 
