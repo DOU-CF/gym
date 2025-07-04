@@ -712,17 +712,17 @@ footer{
   .hamburger {
     display: flex;
   }
-
+  .wrap {
+    padding: 0 10px;
+  }
   .container {
-		width: 90%;
+		width: auto;
 		padding: 0 16px;
 	}
 	
   .hero {
     flex-direction: column;
-    padding: 20px;
-    height: auto;
-    
+    padding: 20px;    
   }
   p, .faith-list, .slogan {
     font-size: 16px;
@@ -730,17 +730,46 @@ footer{
   }
   .banner-slide, .banner-text {
     width: 100%;
+    max-width: none;
   }
   
-  .container-introduce, .course-item , .team-members {
+ /* .container-introduce, .course-card, .team-members {
     flex: 0 0 100%;
     flex-direction: column;
-    
-  }
+  }*/
   
+  .course-card {
+    flex: 1 1 100%;
+    max-width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .team-members {
+    flex-direction: column;
+    align-items: center;
+  }
+  .coach-card {
+    width: 100%;
+    max-width: 350px;
+  }
+  .student-card {
+    flex: 1 1 100%;
+    max-width: 100%;
+
+  }
   .footer-container {
     flex-direction: column;
     text-align: center;
+    align-items: center;
+  }
+  .footer-info, .footer-slogan {
+    width: 100%;
+    text-align: center;
+  }
+
+  .schedule-table th, .schedule-table td {
+    font-size: 14px;
+    padding: 8px;
   }
 }
 
