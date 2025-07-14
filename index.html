@@ -11,9 +11,12 @@
   <link rel="stylesheet" href="reset.css">
   <link rel="stylesheet" href="0523style.css">
   <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+/>
 </head>
 
 <body>
+  <div class="wrap">
     <main>
       <header>
         <nav class="navbar">
@@ -57,9 +60,9 @@
           <section class="container-about">
             <h2 id="about">我們的核心三大信念：</h2>
                     <ul class="faith">
-                      <li class="faith">專業導向：擁有國際認證教練團隊，科學規劃每一次訓練。</li>
-                      <li class="faith">個人化訓練：針對你的目標、體能與生活習慣，量身打造訓練計畫。</li>
-                      <li class="faith">社群支持：一起運動、不孤單，讓改變成為一種習慣。</li>
+                      <li>專業導向：擁有國際認證教練團隊，科學規劃每一次訓練。</li>
+                      <li>個人化訓練：針對你的目標、體能與生活習慣，量身打造訓練計畫。</li>
+                      <li>社群支持：一起運動、不孤單，讓改變成為一種習慣。</li>
                     </ul>
           </section>
         
@@ -166,15 +169,15 @@
             <div class="coach-info">
             <h3 class="coaches">Vic教練</h3>
             <ul class="believe">
-                <li class="believe">想日常生活更便利、提升生活品質，訓練絕對是最不可或缺的元素。</li>
+                <li>想日常生活更便利、提升生活品質，訓練絕對是最不可或缺的元素。</li>
             </ul>
-            <p class="license">專業證照/經歷</p>
+            <p class="expert">專業證照/經歷</p>
             <ul class="license">
-                <li class="license">ACE-CPT 私人教練證照</li>
-                <li class="license">G動學-上、下肢整合訓練，動作概論與核心</li>
-                <li class="license">IPTA基礎運動營養</li>
-                <li class="license">TRX STC 懸吊訓練證照</li>
-                <li class="license">AFAA美國運動體適能協會 合格私人教練</li>
+                <li>ACE-CPT 私人教練證照</li>
+                <li>G動學-上、下肢整合訓練，動作概論與核心</li>
+                <li>IPTA基礎運動營養</li>
+                <li>TRX STC 懸吊訓練證照</li>
+                <li>AFAA美國運動體適能協會 合格私人教練</li>
             </ul>
             </div>
             </div>
@@ -185,15 +188,15 @@
             <div class="coach-info">
             <h3 class="coaches">Tiffany教練</h3>
             <ul class="believe">
-                <li class="believe">每個人，都能夠在健身當中，找到更好更有自信的自己。</li>
+                <li class=>每個人，都能夠在健身當中，找到更好更有自信的自己。</li>
             </ul>
-            <p class="license">專業證照/經歷</p>
+            <p class="expert">專業證照/經歷</p>
             <ul class="license">
-                <li class="license">ACE – CPT美國運動委員會 合格私人教練</li>
-                <li class="license">AFAA美國運動體適能協會 合格私人教練</li>
-                <li class="license">通過TRX懸吊訓練師培訓</li>
-                <li class="license">通過孕婦及產後體適能教練培訓</li>
-                <li class="license">G動學-上、下肢整合訓練，動作概論與核心</li>
+                <li>ACE – CPT美國運動委員會 合格私人教練</li>
+                <li>AFAA美國運動體適能協會 合格私人教練</li>
+                <li>通過TRX懸吊訓練師培訓</li>
+                <li>通過孕婦及產後體適能教練培訓</li>
+                <li>G動學-上、下肢整合訓練，動作概論與核心</li>
       
             </ul>
             </div>
@@ -205,15 +208,15 @@
         <div class="coach-info">
         <h3 class="coaches">Samantha教練</h3>
         <ul class="believe">
-          <li class="believe">瑜珈能讓所有人的生活更愉快、健康及均衡。讓瑜珈成為生活的一部分。</li>
+          <li>瑜珈能讓所有人的生活更愉快、健康及均衡。讓瑜珈成為生活的一部分。</li>
         </ul>
-        <p class="license">專業證照/經歷</p>
+        <p class="expert">專業證照/經歷</p>
         <ul class="license">
-            <li class="license">RYT200小時哈達瑜珈國際師資認證</li>
-            <li class="license">皮拉提斯墊上一級師資認證</li>
-            <li class="license">瑜珈輪師資認證</li>
-            <li class="license">西塔療癒初階進階證書</li>
-            <li class="license">通過IPTA基礎運動營養、運動營養進階證照</li>
+            <li>RYT200小時哈達瑜珈國際師資認證</li>
+            <li>皮拉提斯墊上一級師資認證</li>
+            <li>瑜珈輪師資認證</li>
+            <li>西塔療癒初階進階證書</li>
+            <li>通過IPTA基礎運動營養、運動營養進階證照</li>
         </ul>
            </div>
         
@@ -320,7 +323,11 @@
 
     </main>
 
+</div>
     <script>
+
+    document.addEventListener("DOMContentLoaded", function () {
+
     const hamburger = document.getElementById('hamburger');
     const navLinks = document.getElementById('navLinks');
 
@@ -347,37 +354,52 @@
       hamburger.classList.remove('active');
       navLinks.classList.remove('show');
     }
+  
   });
+  
+  const swiperStudent = new Swiper('.student-swiper', { // 避免變數名衝突
+        loop: true,
+        autoplay: {
+          delay: 4000,
+          disableOnInteraction: false,
+        },
+        slidesPerView: 1,
+        spaceBetween: 20, // 增加卡片間距
+        breakpoints: { // 響應式設定
+            768: {
+                slidesPerView: 2,
+                spaceBetween: 30
+            }
+        }
+      });
 
-/*
-  const swiper = new Swiper('.banner-slide', {
-    loop: true,
-    autoplay: {
-      delay: 3000,
-    },
-    effect: 'fade',
-    fadeEffect: {
-      crossFade: true
-    },
+
+      document.querySelectorAll('.faq-question').forEach(btn => {
+        btn.addEventListener('click', () => {
+          const answer = btn.nextElementSibling;
+          // 使用 toggle 類別來控制顯示/隱藏，搭配 CSS transition
+          if (answer.style.maxHeight) { // 如果有高度，表示是展開的，收起
+              answer.style.maxHeight = null;
+              answer.style.paddingTop = '0';
+              answer.style.paddingBottom = '0';
+          } else { // 展開
+              answer.style.maxHeight = answer.scrollHeight + "px";
+              answer.style.paddingTop = '15px'; // 恢復 padding
+              answer.style.paddingBottom = '15px'; // 恢復 padding
+          }
+        });
+      });
+    })
+
+    document.querySelectorAll('.faq-question').forEach((question) => {
+    question.addEventListener('click', () => {
+      const answer = question.nextElementSibling;
+      answer.classList.toggle('open');
+    });
   });
-*/
-  const swiperStudent = new Swiper('.student-swiper', {
-  loop: true,
-  autoplay: {
-    delay: 4000,
-  },
-  slidesPerView: 1,
-});
-
-
-document.querySelectorAll('.faq-question').forEach(btn => {
-  btn.addEventListener('click', () => {
-    const answer = btn.nextElementSibling;
-    answer.style.display = answer.style.display === 'block' ? 'none' : 'block';
-  });
-});
-
-    </script>
     
+    </script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+/>
 </body>
 </html>
