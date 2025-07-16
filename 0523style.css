@@ -109,7 +109,7 @@ h3 {
   justify-content: space-between;
   align-items: center;
   gap: 20px;
-  padding: 20px;
+  
   flex-wrap: wrap;
 
   background-image: url(https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?q=80&w=900&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
@@ -364,7 +364,7 @@ background: #b98552;
   flex-wrap: wrap;
   gap: 8px;
   justify-content: center;
-  padding: 20px 0;     
+    
 }
 
 .coach-card {
@@ -380,7 +380,6 @@ background: #b98552;
   box-sizing: border-box;
   background-color: #fff;
   max-width: 100%;
-  width: 400px;
   height: 300px;
 } 
 
@@ -554,7 +553,7 @@ footer {
   background-color: #6B705C;
   color: #FFFFFF;
   padding: 20px;
-  margin-top: 40px;
+  margin-top: -10px;
 
 }
 
@@ -620,7 +619,7 @@ footer {
 
   .student-card {
     flex: 1 1 calc(50% - 20px);
-    max-width: calc(50% - 20px);
+  
   }
 }
 
