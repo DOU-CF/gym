@@ -589,11 +589,7 @@ footer {
     font-size: 18px;
     text-align: center;
     padding: 20px 15px;
-    flex: 1 1 400px;
-}
-
-.footer-slogan p {
-  margin-bottom: 10px;
+    /*flex: 1 1 400px;*/
 }
 
 .footer-copyright {
@@ -632,8 +628,8 @@ footer {
     max-width: none;
   }
   .course-card {
-    flex: 1 1 calc(50% - 20%);
-    max-width: calc(50% - 20%);
+    flex: 1 1 calc(50% - 20px);
+    max-width: calc(50% - 20px);
   }
   .footer-container {
     flex-direction: column;
@@ -728,23 +724,25 @@ h3 {
     align-items: center;
   }
   .coach-card {
-    flex: 1 1 100%;
     max-width: 100%;
     
   }
   .student-card {
-    flex: 1 1 100%;
-    max-width: 100%;
+    flex: 1 1 100%;justify-content: center;
+    
+   /* align-items: center;
+    max-width: 100%;*/
 
   }
   .footer-container {
     flex-direction: column;
-    text-align: center;
-    align-items: center;
+    
   }
   .footer-info, .footer-slogan {
-    width: 100%;
-    text-align: center;
+    height: auto;
+    text-align: left;
+    padding: auto;
+    
   }
 
   
